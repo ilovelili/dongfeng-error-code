@@ -1,5 +1,4 @@
 // Package errorcode defines the customzied error code.
-// https://confluence.tyo.invastsec.com/pages/resumedraft.action?draftId=5963807&draftShareId=0e50f541-3d27-42b9-a4a6-568bf5d73731
 package errorcode
 
 import (
@@ -40,7 +39,14 @@ var (
 var ()
 
 // Core
-var ()
+var (
+	// CoreFailedToSaveUser failed to save user
+	CoreFailedToSaveUser = new(core, "E1000", "failed to save user", http.StatusInternalServerError)
+	// CoreFailedToGetOperation failed to get operation
+	CoreFailedToGetOperation = new(core, "E1001", "failed to get operation", http.StatusInternalServerError)
+	// CoreFailedToGetFriends failed to get friends
+	CoreFailedToGetFriends = new(core, "E1002", "failed to get friends", http.StatusInternalServerError)
+)
 
 // Error implements the error interface.
 type Error struct {
