@@ -36,7 +36,9 @@ var (
 )
 
 // Core-Proxy
-var ()
+var (
+	CoreProxyFailedToGetSession = new(coreproxy, "E1001", "failed to get session", http.StatusInternalServerError)
+)
 
 // Core
 var (
