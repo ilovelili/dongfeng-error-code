@@ -37,7 +37,8 @@ var (
 
 // Core-Proxy
 var (
-	CoreProxyFailedToGetSession = new(coreproxy, "E1001", "failed to get session", http.StatusInternalServerError)
+	CoreProxyFailedToGetSession  = new(coreproxy, "E1001", "failed to get session", http.StatusInternalServerError)
+	CoreProxyFailedToSaveSession = new(coreproxy, "E1002", "failed to save session", http.StatusInternalServerError)
 )
 
 // Core
