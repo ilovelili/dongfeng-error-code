@@ -45,8 +45,8 @@ var (
 var (
 	// CoreFailedToSaveUser failed to save user
 	CoreFailedToSaveUser = new(core, "E1000", "failed to save user", http.StatusInternalServerError)
-	// CoreFailedToGetOperation failed to get operation
-	CoreFailedToGetOperation = new(core, "E1001", "failed to get operation", http.StatusInternalServerError)
+	// CoreFailedToGetNotification failed to get notificaiton
+	CoreFailedToGetNotification = new(core, "E1001", "failed to get notificaiton", http.StatusInternalServerError)
 	// CoreFailedToGetFriends failed to get friends
 	CoreFailedToGetFriends = new(core, "E1002", "failed to get friends", http.StatusInternalServerError)
 )
