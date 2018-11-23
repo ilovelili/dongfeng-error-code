@@ -37,8 +37,16 @@ var (
 
 // Core-Proxy
 var (
-	CoreProxyFailedToGetSession  = new(coreproxy, "E1001", "failed to get session", http.StatusInternalServerError)
+	// CoreProxyFailedToGetSession filed to get session from redis
+	CoreProxyFailedToGetSession = new(coreproxy, "E1001", "failed to get session", http.StatusInternalServerError)
+	// CoreProxyFailedToGetSession failed to save session to redis
 	CoreProxyFailedToSaveSession = new(coreproxy, "E1002", "failed to save session", http.StatusInternalServerError)
+	// CoreProxyFailedToReadAvatarFile failed to read avatar file
+	CoreProxyFailedToReadAvatarFile = new(coreproxy, "E1003", "failed to read avatar file", http.StatusBadRequest)
+	// CoreProxyFailedToUploadAvatar failed to upload avatar file
+	CoreProxyFailedToUploadAvatar = new(coreproxy, "E1004", "failed to upload avatar file", http.StatusInternalServerError)
+	// CoreProxyUnsupportedMimeType unsupported mime type
+	CoreProxyUnsupportedMimeType = new(coreproxy, "E1003", "unsupported mime type", http.StatusBadRequest)
 )
 
 // Core
