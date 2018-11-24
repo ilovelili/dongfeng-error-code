@@ -57,6 +57,8 @@ var (
 	CoreFailedToGetNotification = new(core, "E1001", "failed to get notificaiton", http.StatusInternalServerError)
 	// CoreFailedToGetFriends failed to get friends
 	CoreFailedToGetFriends = new(core, "E1002", "failed to get friends", http.StatusInternalServerError)
+	// CoreNoUser user not found
+	CoreNoUser = new(core, "E1003", "no user", http.StatusBadRequest)
 )
 
 // Error implements the error interface.
