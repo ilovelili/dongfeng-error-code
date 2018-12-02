@@ -46,7 +46,9 @@ var (
 	// CoreProxyFailedToUploadAvatar failed to upload avatar file
 	CoreProxyFailedToUploadAvatar = new(coreproxy, "E1004", "failed to upload avatar file", http.StatusInternalServerError)
 	// CoreProxyUnsupportedMimeType unsupported mime type
-	CoreProxyUnsupportedMimeType = new(coreproxy, "E1003", "unsupported mime type", http.StatusBadRequest)
+	CoreProxyUnsupportedMimeType = new(coreproxy, "E1005", "unsupported mime type", http.StatusBadRequest)
+	// CoreProxyInvalidUpdateUserRequestBody invalid update request
+	CoreProxyInvalidUpdateUserRequestBody = new(coreproxy, "E1006", "invalid user update request", http.StatusBadRequest)
 )
 
 // Core
