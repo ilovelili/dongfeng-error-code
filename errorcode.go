@@ -51,6 +51,8 @@ var (
 	CoreProxyInvalidUpdateUserRequestBody = new(coreproxy, "E1006", "invalid user update request", http.StatusBadRequest)
 	// CoreProxyFailedToReadAttendanceFile failed to read attendance file
 	CoreProxyFailedToReadAttendanceFile = new(coreproxy, "E1007", "failed to read attendance file", http.StatusBadRequest)
+	// CoreProxyBadFormatAttendanceFile attendance file is bad formatted
+	CoreProxyBadFormatAttendanceFile = new(coreproxy, "E1008", "attendance file is bad formatted", http.StatusBadRequest)
 )
 
 // Core
