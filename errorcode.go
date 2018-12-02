@@ -54,13 +54,15 @@ var (
 // Core
 var (
 	// CoreFailedToSaveUser failed to save user
-	CoreFailedToSaveUser = new(core, "E1000", "failed to save user", http.StatusInternalServerError)
+	CoreFailedToSaveUser = new(core, "E2000", "failed to save user", http.StatusInternalServerError)
 	// CoreFailedToGetNotification failed to get notificaiton
-	CoreFailedToGetNotification = new(core, "E1001", "failed to get notificaiton", http.StatusInternalServerError)
+	CoreFailedToGetNotification = new(core, "E2001", "failed to get notificaiton", http.StatusInternalServerError)
 	// CoreFailedToGetFriends failed to get friends
-	CoreFailedToGetFriends = new(core, "E1002", "failed to get friends", http.StatusInternalServerError)
+	CoreFailedToGetFriends = new(core, "E2002", "failed to get friends", http.StatusInternalServerError)
 	// CoreNoUser user not found
-	CoreNoUser = new(core, "E1003", "no user", http.StatusBadRequest)
+	CoreNoUser = new(core, "E2003", "no user", http.StatusBadRequest)
+	// CoreInvalidUpdateUserRequest invalid update user request
+	CoreInvalidUpdateUserRequest = new(core, "E2004", "invalid update user request", http.StatusBadRequest)
 )
 
 // Error implements the error interface.
