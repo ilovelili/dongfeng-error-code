@@ -49,6 +49,8 @@ var (
 	CoreProxyUnsupportedMimeType = new(coreproxy, "E1005", "unsupported mime type", http.StatusBadRequest)
 	// CoreProxyInvalidUpdateUserRequestBody invalid update request
 	CoreProxyInvalidUpdateUserRequestBody = new(coreproxy, "E1006", "invalid user update request", http.StatusBadRequest)
+	// CoreProxyFailedToReadAttendenceFile invalid update request
+	CoreProxyFailedToReadAttendenceFile = new(coreproxy, "E1007", "failed to read attendence file", http.StatusBadRequest)
 )
 
 // Core
