@@ -67,6 +67,8 @@ var (
 	CoreNoUser = new(core, "E2003", "no user", http.StatusBadRequest)
 	// CoreInvalidUpdateUserRequest invalid update user request
 	CoreInvalidUpdateUserRequest = new(core, "E2004", "invalid update user request", http.StatusBadRequest)
+	// CoreFailedToSaveAttendance failed to save attendance
+	CoreFailedToSaveAttendance = new(core, "E2005", "failed to save attendance", http.StatusInternalServerError)
 )
 
 // Error implements the error interface.
