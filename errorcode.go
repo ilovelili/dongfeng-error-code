@@ -53,6 +53,8 @@ var (
 	CoreProxyFailedToReadAttendanceFile = new(coreproxy, "E1007", "failed to read attendance file", http.StatusBadRequest)
 	// CoreProxyBadFormatAttendanceFile attendance file is bad formatted
 	CoreProxyBadFormatAttendanceFile = new(coreproxy, "E1008", "attendance file is bad formatted", http.StatusBadRequest)
+	// CoreProxyInvalidAttendanceRequest invalid attendance request
+	CoreProxyInvalidAttendanceRequest = new(coreproxy, "E1009", "invalid attendance request", http.StatusBadRequest)
 )
 
 // Core
@@ -69,6 +71,8 @@ var (
 	CoreInvalidUpdateUserRequest = new(core, "E2004", "invalid update user request", http.StatusBadRequest)
 	// CoreFailedToSaveAttendance failed to save attendance
 	CoreFailedToSaveAttendance = new(core, "E2005", "failed to save attendance", http.StatusInternalServerError)
+	// CoreFailedToGetAttendance failed to get attendance
+	CoreFailedToGetAttendance = new(core, "E2006", "failed to get attendance", http.StatusInternalServerError)
 )
 
 // Error implements the error interface.
