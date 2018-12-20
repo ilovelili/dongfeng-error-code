@@ -77,6 +77,8 @@ var (
 	CoreInvalidClass = new(core, "E2007", "invalid class", http.StatusBadRequest)
 	// CoreFailedToSaveNamelist failed to save namelist
 	CoreFailedToSaveNamelist = new(core, "E2008", "failed to save namelist", http.StatusInternalServerError)
+	// CoreFailedToGetNamelist failed to get namelist
+	CoreFailedToGetNamelist = new(core, "E2008", "failed to get namelist", http.StatusInternalServerError)
 )
 
 // Attendance
