@@ -59,6 +59,10 @@ var (
 	CoreProxyFailedToReadPhysiqueFile = new(coreproxy, "E1010", "failed to read physique file", http.StatusBadRequest)
 	// CoreProxyBadFormatPhysiqueFile physique file is bad formatted
 	CoreProxyBadFormatPhysiqueFile = new(coreproxy, "E1011", "physique file is bad formatted", http.StatusBadRequest)
+	// CoreProxyFailedToReadNamelistFile failed to read namelist file
+	CoreProxyFailedToReadNamelistFile = new(coreproxy, "E1012", "failed to read namelist file", http.StatusBadRequest)
+	// CoreProxyBadFormatNamelistFile namelist file is bad formatted
+	CoreProxyBadFormatNamelistFile = new(coreproxy, "E1013", "namelist file is bad formatted", http.StatusBadRequest)
 )
 
 // Core
