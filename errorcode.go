@@ -75,6 +75,8 @@ var (
 	CoreInvalidUpdateUserRequest = new(core, "E2004", "invalid update user request", http.StatusBadRequest)
 	// CoreInvalidClass invalid class
 	CoreInvalidClass = new(core, "E2007", "invalid class", http.StatusBadRequest)
+	// CoreFailedToGetNamelist failed to get namelist
+	CoreFailedToGetNamelist = new(core, "E6003", "failed to get namelist", http.StatusInternalServerError)
 )
 
 // Attendance
@@ -85,8 +87,6 @@ var (
 	AttendanceFailedToGetAttendance = new(core, "E6001", "failed to get attendance", http.StatusInternalServerError)
 	// CoreFailedToSaveNamelist failed to save namelist
 	AttendanceFailedToSaveNamelist = new(core, "E6002", "failed to save namelist", http.StatusInternalServerError)
-	// CoreFailedToGetNamelist failed to get namelist
-	AttendanceFailedToGetNamelist = new(core, "E6003", "failed to get namelist", http.StatusInternalServerError)
 )
 
 // Error implements the error interface.
