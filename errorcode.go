@@ -59,10 +59,6 @@ var (
 	CoreProxyFailedToReadPhysiqueFile = new(coreproxy, "E1010", "failed to read physique file", http.StatusBadRequest)
 	// CoreProxyBadFormatPhysiqueFile physique file is bad formatted
 	CoreProxyBadFormatPhysiqueFile = new(coreproxy, "E1011", "physique file is bad formatted", http.StatusBadRequest)
-	// CoreProxyFailedToReadNamelistFile failed to read namelist file
-	CoreProxyFailedToReadNamelistFile = new(coreproxy, "E1012", "failed to read namelist file", http.StatusBadRequest)
-	// CoreProxyBadFormatNamelistFile namelist file is bad formatted
-	CoreProxyBadFormatNamelistFile = new(coreproxy, "E1013", "namelist file is bad formatted", http.StatusBadRequest)
 )
 
 // Core
@@ -79,10 +75,6 @@ var (
 	CoreInvalidUpdateUserRequest = new(core, "E2004", "invalid update user request", http.StatusBadRequest)
 	// CoreInvalidClass invalid class
 	CoreInvalidClass = new(core, "E2007", "invalid class", http.StatusBadRequest)
-	// CoreFailedToSaveNamelist failed to save namelist
-	CoreFailedToSaveNamelist = new(core, "E2008", "failed to save namelist", http.StatusInternalServerError)
-	// CoreFailedToGetNamelist failed to get namelist
-	CoreFailedToGetNamelist = new(core, "E2008", "failed to get namelist", http.StatusInternalServerError)
 )
 
 // Attendance
@@ -91,6 +83,10 @@ var (
 	AttendanceFailedToSaveAttendance = new(core, "E6000", "failed to save attendance", http.StatusInternalServerError)
 	// CoreFailedToGetAttendance failed to get attendance
 	AttendanceFailedToGetAttendance = new(core, "E6001", "failed to get attendance", http.StatusInternalServerError)
+	// CoreFailedToSaveNamelist failed to save namelist
+	AttendanceFailedToSaveNamelist = new(core, "E6002", "failed to save namelist", http.StatusInternalServerError)
+	// CoreFailedToGetNamelist failed to get namelist
+	AttendanceFailedToGetNamelist = new(core, "E6003", "failed to get namelist", http.StatusInternalServerError)
 )
 
 // Error implements the error interface.
