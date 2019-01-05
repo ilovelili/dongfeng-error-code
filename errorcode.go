@@ -8,10 +8,12 @@ import (
 
 // ids
 const (
-	pipe      = "passthru"
-	generic   = "dongfeng.svc.generic"
-	core      = "dongfeng.svc.core.server"
-	coreproxy = "dongfeng.svc.core.proxy"
+	pipe       = "passthru"
+	generic    = "dongfeng.svc.generic"
+	core       = "dongfeng.svc.core.server"
+	coreproxy  = "dongfeng.svc.core.proxy"
+	nutrition  = "dongfeng.svc.nutrition.server"
+	attendance = "dongfeng.svc.attendance.server"
 )
 
 var (
@@ -79,14 +81,22 @@ var (
 	CoreFailedToGetNamelist = new(core, "E6003", "failed to get namelist", http.StatusInternalServerError)
 )
 
+// Nutrition
+var (
+	// NutritionNoUser user not found
+	NutritionNoUser = new(nutrition, "E5000", "no user", http.StatusBadRequest)
+)
+
 // Attendance
 var (
 	// CoreFailedToSaveAttendance failed to save attendance
-	AttendanceFailedToSaveAttendance = new(core, "E6000", "failed to save attendance", http.StatusInternalServerError)
+	AttendanceFailedToSaveAttendance = new(attendance, "E6000", "failed to save attendance", http.StatusInternalServerError)
 	// CoreFailedToGetAttendance failed to get attendance
-	AttendanceFailedToGetAttendance = new(core, "E6001", "failed to get attendance", http.StatusInternalServerError)
+	AttendanceFailedToGetAttendance = new(attendance, "E6001", "failed to get attendance", http.StatusInternalServerError)
 	// CoreFailedToSaveNamelist failed to save namelist
-	AttendanceFailedToSaveNamelist = new(core, "E6002", "failed to save namelist", http.StatusInternalServerError)
+	AttendanceFailedToSaveNamelist = new(attendance, "E6002", "failed to save namelist", http.StatusInternalServerError)
+	// AttendanceNoUser user not found
+	AttendanceNoUser = new(attendance, "E6003", "no user", http.StatusBadRequest)
 )
 
 // Error implements the error interface.
