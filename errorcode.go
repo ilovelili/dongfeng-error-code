@@ -102,14 +102,14 @@ var (
 // Error implements the error interface.
 type Error struct {
 	ID         string `json:"id"`
-	Code       int32  `json:"code"`
+	Code       int64  `json:"code"`
 	CustomCode string `json:"custom_code"`
 	Detail     string `json:"detail"`
 	Status     string `json:"status"`
 }
 
 // new private constructor
-func new(id, customcode, detail string, code int32) *Error {
+func new(id, customcode, detail string, code int64) *Error {
 	return &Error{
 		ID:         id,
 		CustomCode: customcode,
@@ -132,7 +132,7 @@ func (e *Error) Error() string {
 	return string(b)
 }
 
-func newError(id, detail, customcode string, httpcode int32) error {
+func newError(id, detail, customcode string, httpcode int64) error {
 	err := parse(detail)
 	code := err.Code
 	ccode := err.CustomCode
