@@ -61,10 +61,6 @@ var (
 	CoreProxyFailedToReadPhysiqueFile = new(coreproxy, "E1010", "failed to read physique file", http.StatusBadRequest)
 	// CoreProxyBadFormatPhysiqueFile physique file is bad formatted
 	CoreProxyBadFormatPhysiqueFile = new(coreproxy, "E1011", "physique file is bad formatted", http.StatusBadRequest)
-	// CoreProxyFailedToReadRecipeFile failed to read recipe file
-	CoreProxyFailedToReadRecipeFile = new(coreproxy, "E1012", "failed to read recipe file", http.StatusBadRequest)
-	// CoreProxyBadFormatRecipeFile recipe file is bad formatted
-	CoreProxyBadFormatRecipeFile = new(coreproxy, "E1013", "recipe file is bad formatted", http.StatusBadRequest)
 )
 
 // Core
@@ -88,7 +84,9 @@ var (
 // Nutrition
 var (
 	// NutritionNoUser user not found
-	NutritionNoUser = new(nutrition, "E5000", "no user", http.StatusBadRequest)
+	NutritionNoUser                 = new(nutrition, "E5000", "no user", http.StatusBadRequest)
+	NutritionFailedToSaveIngredient = new(nutrition, "E5001", "failed to save ingredient", http.StatusInternalServerError)
+	NutritionFailedToSaveRecipe     = new(nutrition, "E5002", "failed to save recipe", http.StatusInternalServerError)
 )
 
 // Attendance
