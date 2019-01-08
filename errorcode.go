@@ -84,9 +84,13 @@ var (
 // Nutrition
 var (
 	// NutritionNoUser user not found
-	NutritionNoUser                 = new(nutrition, "E5000", "no user", http.StatusBadRequest)
+	NutritionNoUser = new(nutrition, "E5000", "no user", http.StatusBadRequest)
+	// NutritionFailedToGetIngredient failed to get ingredient
+	NutritionFailedToGetIngredient = new(nutrition, "E5001", "failed to get ingredient", http.StatusInternalServerError)
+	// NutritionFailedToSaveIngredient failed to save ingredient
 	NutritionFailedToSaveIngredient = new(nutrition, "E5001", "failed to save ingredient", http.StatusInternalServerError)
-	NutritionFailedToSaveRecipe     = new(nutrition, "E5002", "failed to save recipe", http.StatusInternalServerError)
+	// NutritionFailedToSaveRecipe failed to save recipe
+	NutritionFailedToSaveRecipe = new(nutrition, "E5002", "failed to save recipe", http.StatusInternalServerError)
 )
 
 // Attendance
