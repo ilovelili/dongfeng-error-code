@@ -103,6 +103,10 @@ var (
 	AttendanceFailedToSaveNamelist = new(attendance, "E6002", "failed to save namelist", http.StatusInternalServerError)
 	// AttendanceNoUser user not found
 	AttendanceNoUser = new(attendance, "E6003", "no user", http.StatusBadRequest)
+	// AttendanceInvalidCountRequest invalid count request
+	AttendanceInvalidCountRequest = new(attendance, "E6004", "invalid count request", http.StatusBadRequest)
+	// AttendanceFailedToGetAttendanceCount failed to save attendance count
+	AttendanceFailedToGetAttendanceCount = new(attendance, "E6005", "failed to save attendance count", http.StatusInternalServerError)
 )
 
 // Error implements the error interface.
