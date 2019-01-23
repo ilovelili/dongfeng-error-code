@@ -35,6 +35,8 @@ var (
 	GenericInsufficientPrivileges = new(generic, "E0004", "insufficient privileges", http.StatusForbidden)
 	// GenericInvalidMetaData invalid meta data
 	GenericInvalidMetaData = new(generic, "E0005", "invalid meta data", http.StatusBadRequest)
+	// GenericIPBlocked ip blocked
+	GenericIPBlocked = new(generic, "E0006", "ip blocked", http.StatusForbidden)
 )
 
 // Core-Proxy
