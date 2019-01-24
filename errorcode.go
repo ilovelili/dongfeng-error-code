@@ -65,6 +65,8 @@ var (
 	CoreProxyBadFormatPhysiqueFile = new(coreproxy, "E1011", "physique file is bad formatted", http.StatusBadRequest)
 	// CoreProxyBadFormatRecipeFile recipe file is bad formatted
 	CoreProxyBadFormatRecipeFile = new(coreproxy, "E1012", "recipe file is bad formatted", http.StatusBadRequest)
+	// CoreProxyInvalidUpdateRecipeRequestBody invalid recipe update request
+	CoreProxyInvalidUpdateRecipeRequestBody = new(coreproxy, "E1013", "invalid recipe update request", http.StatusBadRequest)
 )
 
 // Core
