@@ -101,6 +101,8 @@ var (
 	NutritionFailedToSaveRecipe = new(nutrition, "E5002", "failed to save recipe", http.StatusInternalServerError)
 	// NutritionFailedToGetMenu failed to get menu
 	NutritionFailedToGetMenu = new(nutrition, "E5003", "failed to get menu", http.StatusInternalServerError)
+	// NutritionFailedToGetRecipe failed to get recipe
+	NutritionFailedToGetRecipe = new(nutrition, "E5004", "failed to get recipe", http.StatusInternalServerError)
 )
 
 // Attendance
