@@ -67,6 +67,8 @@ var (
 	CoreProxyBadFormatRecipeFile = new(coreproxy, "E1012", "recipe file is bad formatted", http.StatusBadRequest)
 	// CoreProxyInvalidUpdateRecipeRequestBody invalid recipe update request
 	CoreProxyInvalidUpdateRecipeRequestBody = new(coreproxy, "E1013", "invalid recipe update request", http.StatusBadRequest)
+	// CoreProxyInvalidGetMenuRequest invalid get menu request
+	CoreProxyInvalidGetMenuRequest = new(coreproxy, "E1014", "invalid get menu request", http.StatusBadRequest)
 )
 
 // Core
