@@ -71,6 +71,8 @@ var (
 	CoreProxyInvalidUpdateIngredientRequestBody = new(coreproxy, "E1014", "invalid ingredient update request", http.StatusBadRequest)
 	// CoreProxyInvalidGetMenuRequest invalid get menu request
 	CoreProxyInvalidGetMenuRequest = new(coreproxy, "E1015", "invalid get menu request", http.StatusBadRequest)
+	// CoreProxyInvalidGetProcurementRequest invalid get procurement request
+	CoreProxyInvalidGetProcurementRequest = new(coreproxy, "E1016", "invalid get procurement request", http.StatusBadRequest)
 )
 
 // Core
