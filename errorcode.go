@@ -100,13 +100,15 @@ var (
 	// NutritionFailedToGetIngredient failed to get ingredient
 	NutritionFailedToGetIngredient = new(nutrition, "E5001", "failed to get ingredient", http.StatusInternalServerError)
 	// NutritionFailedToSaveIngredient failed to save ingredient
-	NutritionFailedToSaveIngredient = new(nutrition, "E5001", "failed to save ingredient", http.StatusInternalServerError)
+	NutritionFailedToSaveIngredient = new(nutrition, "E5002", "failed to save ingredient", http.StatusInternalServerError)
 	// NutritionFailedToSaveRecipe failed to save recipe
-	NutritionFailedToSaveRecipe = new(nutrition, "E5002", "failed to save recipe", http.StatusInternalServerError)
+	NutritionFailedToSaveRecipe = new(nutrition, "E5003", "failed to save recipe", http.StatusInternalServerError)
 	// NutritionFailedToGetMenu failed to get menu
-	NutritionFailedToGetMenu = new(nutrition, "E5003", "failed to get menu", http.StatusInternalServerError)
+	NutritionFailedToGetMenu = new(nutrition, "E5004", "failed to get menu", http.StatusInternalServerError)
 	// NutritionFailedToGetRecipe failed to get recipe
-	NutritionFailedToGetRecipe = new(nutrition, "E5004", "failed to get recipe", http.StatusInternalServerError)
+	NutritionFailedToGetRecipe = new(nutrition, "E5005", "failed to get recipe", http.StatusInternalServerError)
+	// NutritionFailedToGetProcurement failed to get procurements
+	NutritionFailedToGetProcurement = new(nutrition, "E5006", "failed to get procurements", http.StatusInternalServerError)
 )
 
 // Attendance
