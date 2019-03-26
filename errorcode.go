@@ -75,6 +75,8 @@ var (
 	CoreProxyInvalidGetProcurementRequest = new(coreproxy, "E1016", "invalid get procurement request", http.StatusBadRequest)
 	// CoreProxyInvalidUpdateNotificationRequestBody invalid update request
 	CoreProxyInvalidUpdateNotificationRequestBody = new(coreproxy, "E1017", "invalid notification update request", http.StatusBadRequest)
+	// CoreProxyInvalidClassNameFile invalid class name file
+	CoreProxyInvalidClassNameFile = new(coreproxy, "E1017", "invalid class name file", http.StatusBadRequest)
 )
 
 // Core
