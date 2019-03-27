@@ -92,9 +92,11 @@ var (
 	// CoreInvalidUpdateUserRequest invalid update user request
 	CoreInvalidUpdateUserRequest = new(core, "E2004", "invalid update user request", http.StatusBadRequest)
 	// CoreInvalidClass invalid class
-	CoreInvalidClass = new(core, "E2007", "invalid class", http.StatusBadRequest)
+	CoreInvalidClass = new(core, "E2005", "invalid class", http.StatusBadRequest)
 	// CoreFailedToGetNamelist failed to get namelist
-	CoreFailedToGetNamelist = new(core, "E6003", "failed to get namelist", http.StatusInternalServerError)
+	CoreFailedToGetNamelist = new(core, "E2006", "failed to get namelist", http.StatusInternalServerError)
+	// CoreFailedToUpdateNamelist failed to update namelist
+	CoreFailedToUpdateNamelist = new(core, "E2007", "failed to update namelist", http.StatusInternalServerError)
 )
 
 // Nutrition
