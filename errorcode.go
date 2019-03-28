@@ -77,6 +77,8 @@ var (
 	CoreProxyInvalidUpdateNotificationRequestBody = new(coreproxy, "E1017", "invalid notification update request", http.StatusBadRequest)
 	// CoreProxyInvalidClassNameFile invalid class name file
 	CoreProxyInvalidClassNameFile = new(coreproxy, "E1018", "invalid class name file", http.StatusBadRequest)
+	// CoreProxyInvalidTeacherNameFile invalid teacher name file
+	CoreProxyInvalidTeacherNameFile = new(coreproxy, "E1019", "invalid teacher name file", http.StatusBadRequest)
 )
 
 // Core
@@ -97,6 +99,10 @@ var (
 	CoreFailedToGetNamelist = new(core, "E2006", "failed to get namelist", http.StatusInternalServerError)
 	// CoreFailedToUpdateNamelist failed to update namelist
 	CoreFailedToUpdateNamelist = new(core, "E2007", "failed to update namelist", http.StatusInternalServerError)
+	// CoreFailedToGetTeacherlist failed to get teacher list
+	CoreFailedToGetTeacherlist = new(core, "E2008", "failed to get teacherlist", http.StatusInternalServerError)
+	// CoreFailedToUpdateTeacherlist failed to update teacher list
+	CoreFailedToUpdateTeacherlist = new(core, "E2009", "failed to update teacherlist", http.StatusInternalServerError)
 )
 
 // Nutrition
