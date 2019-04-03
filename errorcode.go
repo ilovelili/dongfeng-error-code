@@ -104,6 +104,10 @@ var (
 	CoreFailedToGetTeacherlist = new(core, "E2008", "failed to get teacherlist", http.StatusInternalServerError)
 	// CoreFailedToUpdateTeacherlist failed to update teacher list
 	CoreFailedToUpdateTeacherlist = new(core, "E2009", "failed to update teacherlist", http.StatusInternalServerError)
+	// CoreFailedToGetClasses failed to get classes
+	CoreFailedToGetClasses = new(core, "E2010", "failed to get classes", http.StatusInternalServerError)
+	// CoreFailedToUpdateClasses failed to update classes
+	CoreFailedToUpdateClasses = new(core, "E2011", "failed to update classes", http.StatusInternalServerError)
 )
 
 // Nutrition
