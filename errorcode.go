@@ -8,12 +8,11 @@ import (
 
 // ids
 const (
-	pipe       = "passthru"
-	generic    = "dongfeng.svc.generic"
-	core       = "dongfeng.svc.core.server"
-	coreproxy  = "dongfeng.svc.core.proxy"
-	nutrition  = "dongfeng.svc.nutrition.server"
-	attendance = "dongfeng.svc.attendance.server"
+	pipe      = "passthru"
+	generic   = "dongfeng.svc.generic"
+	core      = "dongfeng.svc.core.server"
+	coreproxy = "dongfeng.svc.core.proxy"
+	nutrition = "dongfeng.svc.nutrition.server"
 )
 
 var (
@@ -123,22 +122,6 @@ var (
 	NutritionFailedToGetRecipe = new(nutrition, "E5005", "failed to get recipe", http.StatusInternalServerError)
 	// NutritionFailedToGetProcurement failed to get procurements
 	NutritionFailedToGetProcurement = new(nutrition, "E5006", "failed to get procurements", http.StatusInternalServerError)
-)
-
-// Attendance
-var (
-	// CoreFailedToSaveAttendance failed to save attendance
-	AttendanceFailedToSaveAttendance = new(attendance, "E6000", "failed to save attendance", http.StatusInternalServerError)
-	// CoreFailedToGetAttendance failed to get attendance
-	AttendanceFailedToGetAttendance = new(attendance, "E6001", "failed to get attendance", http.StatusInternalServerError)
-	// CoreFailedToSaveNamelist failed to save namelist
-	AttendanceFailedToSaveNamelist = new(attendance, "E6002", "failed to save namelist", http.StatusInternalServerError)
-	// AttendanceNoUser user not found
-	AttendanceNoUser = new(attendance, "E6003", "no user", http.StatusBadRequest)
-	// AttendanceInvalidCountRequest invalid count request
-	AttendanceInvalidCountRequest = new(attendance, "E6004", "invalid count request", http.StatusBadRequest)
-	// AttendanceFailedToGetAttendanceCount failed to save attendance count
-	AttendanceFailedToGetAttendanceCount = new(attendance, "E6005", "failed to save attendance count", http.StatusInternalServerError)
 )
 
 // Error implements the error interface.
