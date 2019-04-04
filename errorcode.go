@@ -96,14 +96,14 @@ var (
 	CoreInvalidUpdateUserRequest = new(core, "E2004", "invalid update user request", http.StatusBadRequest)
 	// CoreInvalidClass invalid class
 	CoreInvalidClass = new(core, "E2005", "invalid class", http.StatusBadRequest)
-	// CoreFailedToGetNamelist failed to get namelist
-	CoreFailedToGetNamelist = new(core, "E2006", "failed to get namelist", http.StatusInternalServerError)
-	// CoreFailedToUpdateNamelist failed to update namelist
-	CoreFailedToUpdateNamelist = new(core, "E2007", "failed to update namelist", http.StatusInternalServerError)
-	// CoreFailedToGetTeacherlist failed to get teacher list
-	CoreFailedToGetTeacherlist = new(core, "E2008", "failed to get teacherlist", http.StatusInternalServerError)
-	// CoreFailedToUpdateTeacherlist failed to update teacher list
-	CoreFailedToUpdateTeacherlist = new(core, "E2009", "failed to update teacherlist", http.StatusInternalServerError)
+	// CoreFailedToGetPupils failed to get namelist
+	CoreFailedToGetPupils = new(core, "E2006", "failed to get pupils", http.StatusInternalServerError)
+	// CoreFailedToUpdatePupils failed to update namelist
+	CoreFailedToUpdatePupils = new(core, "E2007", "failed to update pupils", http.StatusInternalServerError)
+	// CoreFailedToGetTeachers failed to get teacher list
+	CoreFailedToGetTeachers = new(core, "E2008", "failed to get teachers", http.StatusInternalServerError)
+	// CoreFailedToUpdateTeachers failed to update teacher list
+	CoreFailedToUpdateTeachers = new(core, "E2009", "failed to update teachers", http.StatusInternalServerError)
 	// CoreFailedToGetClasses failed to get classes
 	CoreFailedToGetClasses = new(core, "E2010", "failed to get classes", http.StatusInternalServerError)
 	// CoreFailedToUpdateClasses failed to update classes
