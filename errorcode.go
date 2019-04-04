@@ -78,7 +78,7 @@ var (
 	CoreProxyInvalidClassUploadFile = new(coreproxy, "E1018", "invalid class upload file", http.StatusBadRequest)
 	// CoreProxyInvalidTeacherUploadFile invalid teacher list file
 	CoreProxyInvalidTeacherUploadFile = new(coreproxy, "E1019", "invalid teacher upload file", http.StatusBadRequest)
-	// CoreProxyInvalidPupilUploadFile invalid class namelist file
+	// CoreProxyInvalidPupilUploadFile invalid class pupil file
 	CoreProxyInvalidPupilUploadFile = new(coreproxy, "E1020", "invalid pupil upload file", http.StatusBadRequest)
 )
 
@@ -96,9 +96,9 @@ var (
 	CoreInvalidUpdateUserRequest = new(core, "E2004", "invalid update user request", http.StatusBadRequest)
 	// CoreInvalidClass invalid class
 	CoreInvalidClass = new(core, "E2005", "invalid class", http.StatusBadRequest)
-	// CoreFailedToGetPupils failed to get namelist
+	// CoreFailedToGetPupils failed to get pupils
 	CoreFailedToGetPupils = new(core, "E2006", "failed to get pupils", http.StatusInternalServerError)
-	// CoreFailedToUpdatePupils failed to update namelist
+	// CoreFailedToUpdatePupils failed to update pupils
 	CoreFailedToUpdatePupils = new(core, "E2007", "failed to update pupils", http.StatusInternalServerError)
 	// CoreFailedToGetTeachers failed to get teacher list
 	CoreFailedToGetTeachers = new(core, "E2008", "failed to get teachers", http.StatusInternalServerError)
