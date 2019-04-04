@@ -74,12 +74,12 @@ var (
 	CoreProxyInvalidGetProcurementRequest = new(coreproxy, "E1016", "invalid get procurement request", http.StatusBadRequest)
 	// CoreProxyInvalidUpdateNotificationRequestBody invalid update request
 	CoreProxyInvalidUpdateNotificationRequestBody = new(coreproxy, "E1017", "invalid notification update request", http.StatusBadRequest)
-	// CoreProxyInvalidClassListFile invalid class list file
-	CoreProxyInvalidClassListFile = new(coreproxy, "E1018", "invalid class list file", http.StatusBadRequest)
-	// CoreProxyInvalidTeacherListFile invalid teacher list file
-	CoreProxyInvalidTeacherListFile = new(coreproxy, "E1019", "invalid teacher list file", http.StatusBadRequest)
-	// CoreProxyInvalidClassNamelistFile invalid class namelist file
-	CoreProxyInvalidClassNamelistFile = new(coreproxy, "E1020", "invalid class namelist file", http.StatusBadRequest)
+	// CoreProxyInvalidClassUploadFile invalid class list file
+	CoreProxyInvalidClassUploadFile = new(coreproxy, "E1018", "invalid class upload file", http.StatusBadRequest)
+	// CoreProxyInvalidTeacherUploadFile invalid teacher list file
+	CoreProxyInvalidTeacherUploadFile = new(coreproxy, "E1019", "invalid teacher upload file", http.StatusBadRequest)
+	// CoreProxyInvalidPupilUploadFile invalid class namelist file
+	CoreProxyInvalidPupilUploadFile = new(coreproxy, "E1020", "invalid pupil upload file", http.StatusBadRequest)
 )
 
 // Core
