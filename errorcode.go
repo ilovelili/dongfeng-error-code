@@ -78,8 +78,10 @@ var (
 	CoreProxyInvalidClassUploadFile = new(coreproxy, "E1018", "invalid class upload file", http.StatusBadRequest)
 	// CoreProxyInvalidTeacherUploadFile invalid teacher list file
 	CoreProxyInvalidTeacherUploadFile = new(coreproxy, "E1019", "invalid teacher upload file", http.StatusBadRequest)
-	// CoreProxyInvalidPupilUploadFile invalid class pupil file
+	// CoreProxyInvalidPupilUploadFile invalid pupil file
 	CoreProxyInvalidPupilUploadFile = new(coreproxy, "E1020", "invalid pupil upload file", http.StatusBadRequest)
+	// CoreProxyInvalidAttendanceUploadFile invalid attendance file
+	CoreProxyInvalidAttendanceUploadFile = new(coreproxy, "E1021", "invalid attendance upload file", http.StatusBadRequest)
 )
 
 // Core
@@ -108,6 +110,10 @@ var (
 	CoreFailedToGetClasses = new(core, "E2010", "failed to get classes", http.StatusInternalServerError)
 	// CoreFailedToUpdateClasses failed to update classes
 	CoreFailedToUpdateClasses = new(core, "E2011", "failed to update classes", http.StatusInternalServerError)
+	// CoreFailedToGetAttendances failed to get attendances
+	CoreFailedToGetAttendances = new(core, "E2012", "failed to get attendances", http.StatusInternalServerError)
+	// CoreFailedToUpdateAttendances failed to update attendances
+	CoreFailedToUpdateAttendances = new(core, "E2013", "failed to update attendances", http.StatusInternalServerError)
 )
 
 // Nutrition
