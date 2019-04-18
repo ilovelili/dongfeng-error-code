@@ -82,6 +82,8 @@ var (
 	CoreProxyInvalidPupilUploadFile = new(coreproxy, "E1020", "invalid pupil upload file", http.StatusBadRequest)
 	// CoreProxyInvalidAttendanceUploadFile invalid attendance file
 	CoreProxyInvalidAttendanceUploadFile = new(coreproxy, "E1021", "invalid attendance upload file", http.StatusBadRequest)
+	// CoreProxyInvalidAttendanceUpdateRequestBody invalid attendance update request
+	CoreProxyInvalidAttendanceUpdateRequestBody = new(coreproxy, "E1022", "invalid attendance update request", http.StatusBadRequest)
 )
 
 // Core
