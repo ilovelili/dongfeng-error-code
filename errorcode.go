@@ -82,12 +82,16 @@ var (
 	CoreProxyInvalidPupilUploadFile = new(coreproxy, "E1020", "invalid pupil upload file", http.StatusBadRequest)
 	// CoreProxyInvalidAttendanceUploadFile invalid attendance file
 	CoreProxyInvalidAttendanceUploadFile = new(coreproxy, "E1021", "invalid attendance upload file", http.StatusBadRequest)
+	// CoreProxyInvalidPhysiqueUploadFile invalid physique file
+	CoreProxyInvalidPhysiqueUploadFile = new(coreproxy, "E1022", "invalid physique upload file", http.StatusBadRequest)
 	// CoreProxyInvalidAttendanceUpdateRequestBody invalid attendance update request
-	CoreProxyInvalidAttendanceUpdateRequestBody = new(coreproxy, "E1022", "invalid attendance update request", http.StatusBadRequest)
+	CoreProxyInvalidAttendanceUpdateRequestBody = new(coreproxy, "E1023", "invalid attendance update request", http.StatusBadRequest)
 	// CoreProxyInvalidPupilUpdateRequestBody invalid pupil update request
-	CoreProxyInvalidPupilUpdateRequestBody = new(coreproxy, "E1023", "invalid pupil update request", http.StatusBadRequest)
+	CoreProxyInvalidPupilUpdateRequestBody = new(coreproxy, "E1024", "invalid pupil update request", http.StatusBadRequest)
 	// CoreProxyInvalidTeacherUpdateRequestBody invalid teacher update request
-	CoreProxyInvalidTeacherUpdateRequestBody = new(coreproxy, "E1024", "invalid teacher update request", http.StatusBadRequest)
+	CoreProxyInvalidTeacherUpdateRequestBody = new(coreproxy, "E1025", "invalid teacher update request", http.StatusBadRequest)
+	// CoreProxyInvalidPhysiqueUpdateRequestBody invalid physique update request
+	CoreProxyInvalidPhysiqueUpdateRequestBody = new(coreproxy, "E1026", "invalid physique update request", http.StatusBadRequest)
 )
 
 // Core
@@ -120,6 +124,12 @@ var (
 	CoreFailedToGetAttendances = new(core, "E2012", "failed to get attendances", http.StatusInternalServerError)
 	// CoreFailedToUpdateAttendances failed to update attendances
 	CoreFailedToUpdateAttendances = new(core, "E2013", "failed to update attendances", http.StatusInternalServerError)
+	// CoreFailedToGetPhysiques failed to get physiques
+	CoreFailedToGetPhysiques = new(core, "E2014", "failed to get physiques", http.StatusInternalServerError)
+	// CoreFailedToUpdatePhysiques failed to update physiques
+	CoreFailedToUpdatePhysiques = new(core, "E2015", "failed to update physiques", http.StatusInternalServerError)
+	// CoreInvalidPupil invalid pupil
+	CoreInvalidPupil = new(core, "E2016", "invalid pupil", http.StatusBadRequest)
 )
 
 // Nutrition
