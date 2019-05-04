@@ -130,6 +130,8 @@ var (
 	CoreFailedToUpdatePhysiques = new(core, "E2015", "failed to update physiques", http.StatusInternalServerError)
 	// CoreInvalidPupil invalid pupil
 	CoreInvalidPupil = new(core, "E2016", "invalid pupil", http.StatusBadRequest)
+	// CoreInvalidPhysique invalid physique (failed to resolve)
+	CoreInvalidPhysique = new(core, "E2017", "invalid physique", http.StatusBadRequest)
 )
 
 // Nutrition
