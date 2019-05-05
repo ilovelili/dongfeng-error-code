@@ -92,6 +92,8 @@ var (
 	CoreProxyInvalidTeacherUpdateRequestBody = new(coreproxy, "E1025", "invalid teacher update request", http.StatusBadRequest)
 	// CoreProxyInvalidPhysiqueUpdateRequestBody invalid physique update request
 	CoreProxyInvalidPhysiqueUpdateRequestBody = new(coreproxy, "E1026", "invalid physique update request", http.StatusBadRequest)
+	// CoreProxyInvalidPhysiqueMasterRequest invalid physique master request
+	CoreProxyInvalidPhysiqueMasterRequest = new(coreproxy, "E1027", "invalid physique master request", http.StatusBadRequest)
 )
 
 // Core
@@ -132,6 +134,8 @@ var (
 	CoreInvalidPupil = new(core, "E2016", "invalid pupil", http.StatusBadRequest)
 	// CoreInvalidPhysique invalid physique (failed to resolve)
 	CoreInvalidPhysique = new(core, "E2017", "invalid physique", http.StatusBadRequest)
+	// CoreFailedToGetPhysiqueMasters failed to get physique masters
+	CoreFailedToGetPhysiqueMasters = new(core, "E2018", "failed to get physique masters", http.StatusInternalServerError)
 )
 
 // Nutrition
