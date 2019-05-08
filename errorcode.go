@@ -136,6 +136,18 @@ var (
 	CoreInvalidPhysique = new(core, "E2017", "invalid physique", http.StatusBadRequest)
 	// CoreFailedToGetPhysiqueMasters failed to get physique masters
 	CoreFailedToGetPhysiqueMasters = new(core, "E2018", "failed to get physique masters", http.StatusInternalServerError)
+	// CoreFailedToGetIngredient failed to get ingredient
+	CoreFailedToGetIngredient = new(core, "E2019", "failed to get ingredient", http.StatusInternalServerError)
+	// CoreFailedToSaveIngredient failed to save ingredient
+	CoreFailedToSaveIngredient = new(core, "E2020", "failed to save ingredient", http.StatusInternalServerError)
+	// CoreFailedToSaveRecipe failed to save recipe
+	CoreFailedToSaveRecipe = new(core, "E2021", "failed to save recipe", http.StatusInternalServerError)
+	// CoreFailedToGetMenu failed to get menu
+	CoreFailedToGetMenu = new(core, "E2022", "failed to get menu", http.StatusInternalServerError)
+	// CoreFailedToGetRecipe failed to get recipe
+	CoreFailedToGetRecipe = new(core, "E2023", "failed to get recipe", http.StatusInternalServerError)
+	// CoreFailedToGetProcurement failed to get procurements
+	CoreFailedToGetProcurement = new(core, "E2024", "failed to get procurements", http.StatusInternalServerError)
 )
 
 // Nutrition
