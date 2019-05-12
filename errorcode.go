@@ -148,6 +148,10 @@ var (
 	CoreFailedToGetRecipe = new(core, "E2023", "failed to get recipe", http.StatusInternalServerError)
 	// CoreFailedToGetProcurement failed to get procurements
 	CoreFailedToGetProcurement = new(core, "E2024", "failed to get procurements", http.StatusInternalServerError)
+	// CoreInvalidAttendanceCountRequest invalid attendance count request
+	CoreInvalidAttendanceCountRequest = new(core, "E2025", "invalid attendance count request", http.StatusBadRequest)
+	// CoreFailedToGetAttendanceCount invalid attendance count request
+	CoreFailedToGetAttendanceCount = new(core, "E2026", "failed to get attendance count", http.StatusInternalServerError)
 )
 
 // Nutrition
