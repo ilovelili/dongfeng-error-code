@@ -152,6 +152,8 @@ var (
 	CoreInvalidAttendanceCountRequest = new(core, "E2025", "invalid attendance count request", http.StatusBadRequest)
 	// CoreFailedToGetAttendanceCount invalid attendance count request
 	CoreFailedToGetAttendanceCount = new(core, "E2026", "failed to get attendance count", http.StatusInternalServerError)
+	// CoreInvalidIngredientCategory invalid ingredient category
+	CoreInvalidIngredientCategory = new(core, "E2027", "invalid ingredient category", http.StatusBadRequest)
 )
 
 // Nutrition
