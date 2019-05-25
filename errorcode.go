@@ -94,6 +94,8 @@ var (
 	CoreProxyInvalidPhysiqueUpdateRequestBody = new(coreproxy, "E1026", "invalid physique update request", http.StatusBadRequest)
 	// CoreProxyInvalidPhysiqueMasterRequest invalid physique master request
 	CoreProxyInvalidPhysiqueMasterRequest = new(coreproxy, "E1027", "invalid physique master request", http.StatusBadRequest)
+	// CoreProxyFailedToUnmarshalGrowthProfileData
+	CoreProxyFailedToUnmarshalGrowthProfileData = new(coreproxy, "E1028", "failed to unmarshal growth profile data", http.StatusInternalServerError)
 )
 
 // Core
