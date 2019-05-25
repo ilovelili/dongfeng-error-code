@@ -154,6 +154,10 @@ var (
 	CoreFailedToGetAttendanceCount = new(core, "E2026", "failed to get attendance count", http.StatusInternalServerError)
 	// CoreInvalidIngredientCategory invalid ingredient category
 	CoreInvalidIngredientCategory = new(core, "E2027", "invalid ingredient category", http.StatusBadRequest)
+	// CoreFailedToGetGrowthProfile failed to get growth profile
+	CoreFailedToGetGrowthProfile = new(core, "E2028", "failed to get growth profile", http.StatusInternalServerError)
+	// CoreFailedToSaveGrowthProfile failed to save growth profile
+	CoreFailedToSaveGrowthProfile = new(core, "E2029", "failed to save growth profile", http.StatusInternalServerError)
 )
 
 // Nutrition
