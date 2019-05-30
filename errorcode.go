@@ -164,6 +164,8 @@ var (
 	CoreFailedToGetGrowthProfile = new(core, "E2028", "failed to get growth profile", http.StatusInternalServerError)
 	// CoreFailedToSaveGrowthProfile failed to save growth profile
 	CoreFailedToSaveGrowthProfile = new(core, "E2029", "failed to save growth profile", http.StatusInternalServerError)
+	// CoreGrowthProfileAlreadyExists growth profile already exists
+	CoreGrowthProfileAlreadyExists = new(core, "E2030", "growth profile already exists", http.StatusBadRequest)
 )
 
 // Nutrition
