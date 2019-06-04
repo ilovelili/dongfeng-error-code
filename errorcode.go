@@ -100,6 +100,8 @@ var (
 	CoreProxyInvalidProfileGetRequest = new(coreproxy, "E1029", "invalid porfile get request", http.StatusBadRequest)
 	// CoreProxyInvalidProfileUpdateRequest invalid porfile update request
 	CoreProxyInvalidProfileUpdateRequest = new(coreproxy, "E1030", "invalid porfile update request", http.StatusBadRequest)
+	// CoreProxyInvalidEbookUpdateRequest invalid Ebook update request
+	CoreProxyInvalidEbookUpdateRequest = new(coreproxy, "E1031", "invalid ebook update request", http.StatusBadRequest)
 )
 
 // Core
@@ -166,6 +168,10 @@ var (
 	CoreFailedToSaveGrowthProfile = new(core, "E2029", "failed to save growth profile", http.StatusInternalServerError)
 	// CoreGrowthProfileAlreadyExists growth profile already exists
 	CoreGrowthProfileAlreadyExists = new(core, "E2030", "growth profile already exists", http.StatusBadRequest)
+	// CoreFailedToSaveEbook failed to save ebook
+	CoreFailedToSaveEbook = new(core, "E2031", "failed to save ebook", http.StatusInternalServerError)
+	// CoreFailedToUploadEbookToCloud failed to upload to cloud storage
+	CoreFailedToUploadEbookToCloud = new(core, "E2032", "failed to upload to cloud storage", http.StatusBadGateway)
 )
 
 // Nutrition
