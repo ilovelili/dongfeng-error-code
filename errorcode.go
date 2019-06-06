@@ -172,6 +172,8 @@ var (
 	CoreFailedToSaveEbook = new(core, "E2031", "failed to save ebook", http.StatusInternalServerError)
 	// CoreFailedToUploadEbookToCloud failed to upload to cloud storage
 	CoreFailedToUploadEbookToCloud = new(core, "E2032", "failed to upload to cloud storage", http.StatusBadGateway)
+	// CoreFailedToConvertEbookHTML failed to convert ebook
+	CoreFailedToConvertEbookHTML = new(core, "E2033", "failed to convert ebook", http.StatusBadGateway)
 )
 
 // Nutrition
