@@ -178,6 +178,8 @@ var (
 	CoreFailedToConvertEbookHTML = new(core, "E2033", "failed to convert ebook", http.StatusBadGateway)
 	// CoreFailedToGetEbook failed to get ebook
 	CoreFailedToGetEbook = new(core, "E2034", "failed to get ebook", http.StatusInternalServerError)
+	// CoreFailedToMergeEbook failed to get merge
+	CoreFailedToMergeEbook = new(core, "E2035", "failed to merge ebook", http.StatusInternalServerError)
 )
 
 // Nutrition
