@@ -104,6 +104,8 @@ var (
 	CoreProxyInvalidEbookUpdateRequest = new(coreproxy, "E1031", "invalid ebook update request", http.StatusBadRequest)
 	// CoreProxyInvalidEbookCreateRequest invalid ebook create request
 	CoreProxyInvalidEbookCreateRequest = new(coreproxy, "E1032", "invalid ebook create request", http.StatusBadRequest)
+	// CoreProxyInvalidProcurementUpdateRequest invalid procurement update request
+	CoreProxyInvalidProcurementUpdateRequest = new(coreproxy, "E1033", "invalid procurement update request", http.StatusBadRequest)
 )
 
 // Core
@@ -180,6 +182,8 @@ var (
 	CoreFailedToGetEbook = new(core, "E2034", "failed to get ebook", http.StatusInternalServerError)
 	// CoreFailedToMergeEbook failed to get merge
 	CoreFailedToMergeEbook = new(core, "E2035", "failed to merge ebook", http.StatusInternalServerError)
+	// CoreFailedToUpdateProcurement failed to update procurement
+	CoreFailedToUpdateProcurement = new(core, "E2036", "failed to update procurement", http.StatusInternalServerError)
 )
 
 // Nutrition
