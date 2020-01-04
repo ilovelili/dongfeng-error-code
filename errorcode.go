@@ -184,6 +184,8 @@ var (
 	CoreFailedToMergeEbook = new(core, "E2035", "failed to merge ebook", http.StatusInternalServerError)
 	// CoreFailedToUpdateProcurement failed to update procurement
 	CoreFailedToUpdateProcurement = new(core, "E2036", "failed to update procurement", http.StatusInternalServerError)
+	// CoreFailedToGetRole failed to get roles
+	CoreFailedToGetRole = new(core, "E2037", "failed to get roles", http.StatusInternalServerError)
 )
 
 // Nutrition
