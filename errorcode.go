@@ -186,6 +186,8 @@ var (
 	CoreFailedToUpdateProcurement = new(core, "E2036", "failed to update procurement", http.StatusInternalServerError)
 	// CoreFailedToGetRole failed to get roles
 	CoreFailedToGetRole = new(core, "E2037", "failed to get roles", http.StatusInternalServerError)
+	// CoreFailedToUpdateRole failed to update role
+	CoreFailedToUpdateRole = new(core, "E2038", "failed to update role", http.StatusInternalServerError)
 )
 
 // Nutrition
