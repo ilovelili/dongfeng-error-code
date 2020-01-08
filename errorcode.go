@@ -106,6 +106,8 @@ var (
 	CoreProxyInvalidEbookCreateRequest = new(coreproxy, "E1032", "invalid ebook create request", http.StatusBadRequest)
 	// CoreProxyInvalidProcurementUpdateRequest invalid procurement update request
 	CoreProxyInvalidProcurementUpdateRequest = new(coreproxy, "E1033", "invalid procurement update request", http.StatusBadRequest)
+	// CoreProxyInvalidProfileTemplateUpdateRequestBody invalid profile template
+	CoreProxyInvalidProfileTemplateUpdateRequestBody = new(coreproxy, "E1034", "invalid profile template update request", http.StatusBadRequest)
 )
 
 // Core
