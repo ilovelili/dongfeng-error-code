@@ -188,10 +188,10 @@ var (
 	CoreFailedToGetRole = new(core, "E2037", "failed to get roles", http.StatusInternalServerError)
 	// CoreFailedToUpdateRole failed to update role
 	CoreFailedToUpdateRole = new(core, "E2038", "failed to update role", http.StatusInternalServerError)
-	// CoreFailedToGetGrowthProfileTemplate failed to get growth profile template
-	CoreFailedToGetGrowthProfileTemplate = new(core, "E2039", "failed to get growth profile template", http.StatusInternalServerError)
-	// CoreFailedToSaveGrowthProfileTemplate failed to save growth profile template
-	CoreFailedToSaveGrowthProfileTemplate = new(core, "E2040", "failed to save growth profile template", http.StatusInternalServerError)
+	// CoreFailedToGetProfileTemplate failed to get growth profile template
+	CoreFailedToGetProfileTemplate = new(core, "E2039", "failed to get profile template", http.StatusInternalServerError)
+	// CoreFailedToSaveProfileTemplate failed to save growth profile template
+	CoreFailedToSaveProfileTemplate = new(core, "E2040", "failed to save profile template", http.StatusInternalServerError)
 )
 
 // Nutrition
